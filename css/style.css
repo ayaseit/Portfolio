@@ -1,0 +1,135 @@
+h1 {
+  color: #293447;
+  font-size: 3em;
+}
+h2, h3, h4 {
+  margin-top: 2em;
+  color: #293447;
+}
+p {
+  color: #293447;
+}
+
+label {
+  /*color: #293447;*/
+  color: #0f356c; 
+  font-weight: normal;
+  margin-top: 1em;
+}
+
+.contact {
+  margin: 1em 10em 1em 10em;
+}
+
+.navbar-default {
+  background-color: rgba(212, 220, 231, 0.38)!important;
+  border-color: rgba(212, 220, 231, 0.38)!important;
+}
+.navbar-default li>a {
+  color: #435474 !important;
+  font-size: 1.5em !important;
+  font-family: Tahoma;
+}
+
+.navbar-brand {
+  color: #435474 !important;
+  font-size: 2em !important;
+  font-family: "Baloo Da", Tahoma;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($gray-base, .5);
+    z-index: 1;
+  }
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-content {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  text-align: center;
+  @include translate(-50%, -50%); 
+  h1 {
+    font-size:48px;
+    color: white;
+    padding:0 10px;
+    small {
+      font:300 18px  $font-regular ;
+      color: white;  
+      display: block;
+      margin: 10px 0;
+    }        
+  }
+  
+}
+.head {
+  position: relative;
+  top: 30em;
+}
+.txt {
+  position: relative;
+  top: 6em;
+}
+
+.section {
+  position: relative;
+  top: 60em;
+  height: 50em;
+  margin-bottom: 10em;
+  background-color: white;
+}
+
+.section1 {
+  position: relative;
+  top: 60em;
+  height: 60em;
+  background-color: white;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../images/iceberg.png') center center / cover no-repeat;
+    @include background-size(cover);
+  }
+  
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
