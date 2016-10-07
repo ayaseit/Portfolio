@@ -2,19 +2,40 @@ h1 {
   color: #293447;
   font-size: 3em;
 }
-h2, h3, h4 {
-  margin-top: 2em;
+.txt h2, .txt h3, .txt h4 {
+  padding-top: 2em;
   color: #293447;
 }
-p {
+.txt p {
   color: #293447;
 }
 
+.footer h2 {
+  font-size: 1.5em;
+  margin-top: -0.5em;
+}
+
+.footer ul li {
+  display: inline-block;
+}
+
 label {
-  /*color: #293447;*/
   color: #0f356c; 
   font-weight: normal;
   margin-top: 1em;
+}
+
+fieldset {
+margin-left: 20%;
+margin-right: 20%;
+}
+
+input {
+  width: 21em;
+}
+
+.form {
+  text-align: center;
 }
 
 .contact {
@@ -89,10 +110,10 @@ label {
   position: relative;
   top: 30em;
 }
-.txt {
+/*.txt {
   position: relative;
   top: 6em;
-}
+}*/
 
 .section {
   position: relative;
@@ -108,6 +129,20 @@ label {
   height: 60em;
   background-color: white;
 }
+
+.footer {
+  position: relative;
+  margin-top: 60em; /* negative value of footer height */
+  height: 11em;
+  background-color: #7187ad;
+  clear:both;
+  padding-top:20px;
+}
+
+.footer img {
+  width: 2.3em;
+}
+
 
 @media (min-aspect-ratio: 16/9) {
   .fullscreen-bg__video {
