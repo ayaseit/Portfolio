@@ -174,7 +174,7 @@ input {
 .projects-group {
 }
 
-#projects img {
+.projects-group img {
   display: inline-block;
   width: 20em;
   margin: 0.2em;
