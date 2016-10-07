@@ -55,24 +55,24 @@ label {
   margin-top: 1em;
 }
 
-fieldset {
+/*fieldset {
   margin-left: 20%;
   margin-right: 20%;
-}
+}*/
 
 input {
-  width: 26em;
+  width: 20em;
 }
 
 
-
+/*
 .form {
   text-align: center;
-}
+}*/
 
-.contact {
+/*.contact {
   margin: 1em 10em 1em 10em;
-}
+}*/
 
 .navbar-default {
   background-color: rgba(212, 220, 231, 0.38)!important;
@@ -184,6 +184,11 @@ input {
     width: 300%;
     left: -100%;
   }
+  .sec {
+    margin-top: -25em;
+    margin-bottom: -31em;
+  }
+  
 }
 
 @media (max-width: 767px) {
@@ -194,5 +199,9 @@ input {
   
   .fullscreen-bg__video {
     display: none;
+  }
+  .sec {
+    margin-top: -25em;
+    margin-bottom: -31em;
   }
 }

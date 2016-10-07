@@ -24,24 +24,25 @@
           <span class="icon-bar"></span>
         </button>
       </div>  
-      <ul class="nav navbar-nav navbar-right collapse navbar-collapse nav-pills">
+      <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
         <li class="nv"><a href="#about">About</a></li>
         <li class="nv"><a href="#projects">Projects</a></li>
         <li class="nv"><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
-  
-  <div class="fullscreen-bg">
+  <div class="sec">
+  <div class="fullscreen-bg hidden-sm hidden-xs">
     <video loop muted autoplay poster="images/iceberg.png" class="fullscreen-bg__video">
       <source src="video/iceberg.mp4" type="video/mp4"> 
         <!-- add .ogv and .webm to cover all compatible devices  -->
       </video>
     </div>
-    
     <div class="head">
       <h1 class="text-center">Welcome to Portfol.io</h1>
     </div>
+  </div>
+    
     <div class="section"  id="about">
       <div class="txt lead">
         <h2 class="text-center">Software QA Engineer. Aspiring Front-End Developer.</h2>
@@ -68,17 +69,17 @@
               </div>
             </div>
             
-            <div class="txt section" id="contact">
+            <div class="txt section row" id="contact">
               <!-- <h2 class="text-center">CONTACT</h2> -->
               <form action="https://formspree.io/ayazhan84@gmail.com" method="POST">
-                <fieldset>
+                <fieldset class="col-lg-4 col-lg-offset-4 text-center">
                   <div class="form">
                     <legend><h2>CONTACT</h2></legend>
                     <label>Full Name:<br><input type="text" name="name" placeholder="Full Name" required></label>
                     <br>
                     <label>E-mail:<br><input type="email" name="email" placeholder="E-mail" required></label>
                     <br>
-                    <label>Your message:<br><textarea rows="15" cols="50" name="message" placeholder="Your message" required></textarea></label>
+                    <label>Your message:<br><textarea rows="15" cols="40" name="message" placeholder="Your message" required></textarea></label>
                     <br>
                     <input type="submit" value="Submit" class="btn btn-primary">
                   </div>
