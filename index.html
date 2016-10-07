@@ -26,23 +26,32 @@
         </button>
       </div>  
       <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
-        <li class="nv"><a href="#about">About</a></li>
-        <li class="nv"><a href="#projects">Projects</a></li>
-        <li class="nv"><a href="#contact">Contact</a></li>
+        <li class="nv">
+          <a href="#about" class="hidden-xs">About</a>
+          <a href="#about" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">About</a>
+        </li>
+        <li class="nv">
+          <a href="#projects" class="hidden-xs">Projects</a>
+          <a href="#projects" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Projects</a>
+        </li>
+        <li class="nv">
+          <a href="#contact" class="hidden-xs">Contact</a>
+          <a href="#contact" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Contact</a>
+        </li>
       </ul>
     </div>
   </div>
   <div class="sec">
-  <div class="fullscreen-bg hidden-sm hidden-xs">
-    <video loop muted autoplay poster="images/iceberg.png" class="fullscreen-bg__video">
-      <source src="video/iceberg.mp4" type="video/mp4"> 
-        <!-- add .ogv and .webm to cover all compatible devices  -->
-      </video>
+    <div class="fullscreen-bg hidden-sm hidden-xs">
+      <video loop muted autoplay poster="images/iceberg.png" class="fullscreen-bg__video">
+        <source src="video/iceberg.mp4" type="video/mp4"> 
+          <!-- add .ogv and .webm to cover all compatible devices  -->
+        </video>
+      </div>
+      <div class="head">
+        <h1 class="text-center">Welcome to Portfol.io</h1>
+      </div>
     </div>
-    <div class="head">
-      <h1 class="text-center">Welcome to Portfol.io</h1>
-    </div>
-  </div>
     
     <div class="section"  id="about">
       <div class="txt lead">
