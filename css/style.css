@@ -40,7 +40,7 @@ h1 {
 i {
   border: 2px solid #fff;
   padding: 0.4em;
-  border-radius: 50%;
+  border-radius: 40%;
   margin-right: 0.3em;
   transition: all 2s;
 }
